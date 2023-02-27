@@ -11,7 +11,6 @@ import com.encora.assessement.horsetracking.service.CurrencyService;
 import lombok.extern.slf4j.Slf4j;
 
 @Service
-@Slf4j
 public class CurrencyServiceImpl implements CurrencyService {
 
 	@Autowired

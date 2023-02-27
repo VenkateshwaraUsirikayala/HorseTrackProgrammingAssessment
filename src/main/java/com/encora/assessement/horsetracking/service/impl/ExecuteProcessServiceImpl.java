@@ -48,8 +48,7 @@ public class ExecuteProcessServiceImpl implements ExecuteProcessService {
             return;
         }
         
-        
-        if (inputSize >= 2&&StringUtils.isAlphanumeric(input)) {
+        if (inputSize >= 2&&input.matches(".*\\d+.*")) {
             executeInput(input);
         } else {
             displayService.displayErrorMessage(AppConstants.INVALID_COMMAND_ERROR + input);
